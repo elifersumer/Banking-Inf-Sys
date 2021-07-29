@@ -40,5 +40,23 @@ namespace Staj_Projesi
             graphics.FillRectangle(_brush, _gradientRectangle);
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            BankerForm.ActiveForm.Visible = false;
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            BankerForm.ActiveForm.Visible = false;
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+
+        private void BankerForm_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

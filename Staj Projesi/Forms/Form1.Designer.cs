@@ -100,6 +100,7 @@ namespace Staj_Projesi
             this.tbxIdNumber.Name = "tbxIdNumber";
             this.tbxIdNumber.Size = new System.Drawing.Size(177, 20);
             this.tbxIdNumber.TabIndex = 5;
+            this.tbxIdNumber.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxIdNumber_KeyDown);
             // 
             // gbx
             // 
@@ -164,8 +165,11 @@ namespace Staj_Projesi
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.gbx);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Banking Information System";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gbx.ResumeLayout(false);
             this.gbx.PerformLayout();

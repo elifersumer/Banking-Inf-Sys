@@ -52,5 +52,19 @@ namespace Staj_Projesi
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            AccountForm.ActiveForm.Visible = false;
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            AccountForm.ActiveForm.Visible = false;
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
     }
 }

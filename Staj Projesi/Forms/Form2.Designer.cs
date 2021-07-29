@@ -35,6 +35,7 @@ namespace Staj_Projesi
             this.btnAccount = new Guna.UI2.WinForms.Guna2Button();
             this.btnCreditCard = new Guna.UI2.WinForms.Guna2Button();
             this.lblWelcome = new System.Windows.Forms.Label();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // lblChoose
@@ -95,6 +96,7 @@ namespace Staj_Projesi
             this.btnAccount.Size = new System.Drawing.Size(195, 150);
             this.btnAccount.TabIndex = 8;
             this.btnAccount.Text = "Account Information";
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
             // 
             // btnCreditCard
             // 
@@ -129,20 +131,53 @@ namespace Staj_Projesi
             this.lblWelcome.Size = new System.Drawing.Size(0, 40);
             this.lblWelcome.TabIndex = 10;
             // 
+            // btnExit
+            // 
+            this.btnExit.AutoRoundedCorners = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderRadius = 17;
+            this.btnExit.CheckedState.Parent = this.btnExit;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.CustomImages.Parent = this.btnExit;
+            this.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnExit.DisabledState.Parent = this.btnExit;
+            this.btnExit.FillColor = System.Drawing.Color.DarkSalmon;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnExit.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.HoverState.FillColor = System.Drawing.Color.Tomato;
+            this.btnExit.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnExit.HoverState.Parent = this.btnExit;
+            this.btnExit.Location = new System.Drawing.Point(358, 401);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.ShadowDecoration.Parent = this.btnExit;
+            this.btnExit.Size = new System.Drawing.Size(90, 37);
+            this.btnExit.TabIndex = 16;
+            this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblWelcome);
             this.Controls.Add(this.btnCreditCard);
             this.Controls.Add(this.btnAccount);
             this.Controls.Add(this.btnBanker);
             this.Controls.Add(this.lblChoose);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Banking Information System";
             this.Load += new System.EventHandler(this.Form2_Load);
+            this.Enter += new System.EventHandler(this.Form2_Enter);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +189,6 @@ namespace Staj_Projesi
         private Guna.UI2.WinForms.Guna2Button btnAccount;
         private Guna.UI2.WinForms.Guna2Button btnCreditCard;
         private System.Windows.Forms.Label lblWelcome;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
     }
 }

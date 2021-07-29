@@ -58,6 +58,13 @@ namespace Staj_Projesi
             creditCardForm.Show();
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Form2.ActiveForm.Visible = false;
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+
         private void set_background(Object sender, PaintEventArgs e)
         {
             Graphics graphics = e.Graphics;
@@ -108,7 +115,9 @@ namespace Staj_Projesi
 
         }
 
+        private void Form2_Enter(object sender, EventArgs e)
+        {
 
-
+        }
     }
 }

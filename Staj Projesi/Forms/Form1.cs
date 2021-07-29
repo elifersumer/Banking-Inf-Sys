@@ -24,12 +24,14 @@ namespace Staj_Projesi
             gbx.BackColor = Color.FromArgb(160, Color.White);
             lblTitle.BackColor = Color.FromArgb(160, Color.White);
             
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             
         }
+       
         private void btnSubmit_Click_1(object sender, EventArgs e)
         {
             sendtext1 = tbxIdNumber.Text;
@@ -67,7 +69,11 @@ namespace Staj_Projesi
             graphics.FillRectangle(_brush, _gradientRectangle);
         }
 
-        
+        private void tbxIdNumber_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnSubmit.PerformClick();
+        }
     }
 }
 
