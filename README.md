@@ -15,7 +15,7 @@ Customer services can view the whole system by customer's informations specified
 
 ---
   
-Details
+### Details
 
 User can see detailed information.<br>
 
