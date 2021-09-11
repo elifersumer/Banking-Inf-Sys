@@ -15,23 +15,23 @@ Customer services can view the whole system by customer's informations specified
 
 ---
   
-### Details
+Details
 
 User can see detailed information.<br>
 
-#### <i>Account Details</i>
+<i>Account Details</i>
   - Name of customer.
   - Category of account.
   - Account number.
   - Balance of account.
 
-#### <i>Credit Card Details</i>
+<i>Credit Card Details</i>
   - Name of customer.
   - Card number.
   - Limit of card.
   - Expired date of card.
   
-#### <i>Banker Details</i>
+<i>Banker Details</i>
   - Id of banker.
   - Name of banker.
   - City of banker.
