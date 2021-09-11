@@ -1,6 +1,8 @@
 # Banking Information System
+<p align="center">
+  <img src="https://www.linkpicture.com/view.php?img=LPic613c8d0144bda929471613"/>
+</p>
 
-https://www.linkpicture.com/view.php?img=LPic613c8d0144bda929471613
 
 
 This Project is created for customer services. System keeps information about customer's accounts, credit cards and bankers. <br>
